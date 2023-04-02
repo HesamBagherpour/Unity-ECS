@@ -8,10 +8,11 @@ public partial class MoveingSystemBase : SystemBase
 {
     protected override void OnUpdate()
     {
-        foreach (LocalTransform ts in SystemAPI.Query<LocalTransform>())
+        foreach (LocalToWorld ts in SystemAPI.Query<LocalToWorld>())
         {
             var a = ts;
-            a.Position.x = 50;
+            Debug.Log("aaaaaaaaaa");
+         
         }
     }
 }
